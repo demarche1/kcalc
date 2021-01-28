@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kcalc</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <img src="./assets/images/fire-svgrepo-com.svg">
+        <div>kcalc</div>
+    </header>
+
+    <main>
+        <form id="form">
+            <div class="gender-container form-group">
+                <label  for="gender">Seu sexo</label>
+                <select id="gender">
+                    <option value="masc">Masculino</option>
+                    <option value="fem">Feminino</option>
+                </select>
+            </div>
+    
+            <div class="age-container form-group">
+                <label for="age">Sua idade</label>
+                <input type="number" id="age">
+            </div>
+    
+           <div class="weight-container form-group">
+                <label for="weight">Seu peso</label>
+                <input type="number" id="weight">
+           </div>
+    
+           <div class="height-container form-group">
+                <label for="height">Sua altura</label>
+                <input type="number" id="height">
+           </div>
+    
+            <div class="activity-level-container form-group">
+                <label for="activityLevel">Seu nível de atividade física</label>
+                <select id="activityLevel">
+                    <option value="1.2">Sedentário</option>
+                    <option value="1.375">Pouca atividade</option>
+                    <option value="1.55">Atividade moderada</option>
+                    <option value="1.725">Atividade intensa</option>
+                    <option value="1.9">Atividade muito intansa</option>
+                </select>
+            </div>
+    
+            <input class="form-group" type="submit" value="Calcular">
+        </form>
+
+        <div class="result-container form-group">
+            <h2>Seu resultado:</h2>
+            <div class="result-content">
+                
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
