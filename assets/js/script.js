@@ -1,3 +1,4 @@
+// kcalc object
 let kcalc = {
     form: function(){
        return document.getElementById('form')
@@ -65,6 +66,7 @@ let kcalc = {
 
 }
 
+// Event litener
 kcalc.form().addEventListener('submit',(event) => {
     kcalc.displayCalc(event)
 })
